@@ -1,0 +1,121 @@
+/* Modern dark theme styles for housing visualization */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+
+:root {
+  --background: #333333;
+  --card-bg: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --accent-blue: #82ca9d;
+  --accent-green: #82ca9d;
+  --border-color: #333333;
+  --grid-color: #605c5c;
+}
+
+body {
+  background-color: var(--background);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styles */
+.min-h-screen {
+  background-color: var(--background) !important;
+}
+
+/* Card styles */
+.bg-white {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color);
+}
+
+/* Typography */
+h1, h2 {
+  color: var(--text-primary);
+  font-weight: 600;
+  
+  letter-spacing: -0.025em;
+}
+
+/* Button styles */
+button {
+  font-weight: 500;
+  font-size: 1em;
+  font-size: 15px;
+  margin: 0.5em;
+  font-family: Arial, sans-serif;
+  margin-left: 15px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Active button state 
+.bg-blue-500 {
+  background-color: var(--accent-blue) !important;
+}*/
+
+/* Inactive button state */
+.bg-gray-200 {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary) !important;
+}
+
+/* Chart customization */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: var(--grid-color) !important;
+}
+
+.recharts-text {
+  fill: var(--text-secondary) !important;
+}
+
+.recharts-legend-item-text {
+  color: var(--text-secondary) !important;
+}
+
+/* Tooltip customization */
+.recharts-tooltip-wrapper {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.recharts-default-tooltip {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Shadow effects */
+.shadow-lg {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Responsive padding */
+.p-6 {
+  padding: 1.5rem !important;
+}
+
+/* Chart colors */
+.recharts-bar-rectangle path {
+  fill: var(--accent-blue) !important;
+}
+
+.recharts-line-curve {
+  stroke: var(--accent-green) !important;
+}
+
+/* Scatter plot dots */
+.recharts-scatter-symbol {
+  fill: var(--accent-blue) !important;
+  opacity: 0.6;
+}
