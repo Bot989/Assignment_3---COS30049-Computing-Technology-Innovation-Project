@@ -1,0 +1,433 @@
+/* Modern dark theme styles for housing visualization */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/*Desktop css styles below*/
+@media screen and (min-width: 1501px) {
+  :root {
+    --background: #333333;
+    --card-bg: #2d2d2d;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --accent-blue: #82ca9d;
+    --accent-green: #82ca9d;
+    --border-color: #333333;
+    --grid-color: #605c5c;
+  }
+  
+  
+  body {
+    background-color: var(--background);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styles */
+  .min-h-screen {
+    background-color: var(--background) !important;
+  }
+  
+  
+  /* Card styles */
+  .bg-white {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+  }
+  
+  /* Typography */
+  h1, h2 {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px;
+    letter-spacing: -0.025em;
+  }
+  
+  
+  /* Button styles */
+  .px-4 {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 12px 24px;
+    font-family: Arial, sans-serif;
+    margin: 0.5em 15px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #383a41, #383a41);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .px-4:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Ripple effect */
+  
+  @keyframes ripple {
+    to {
+      transform: translate(-50%, -50%) scale(3.5);
+      opacity: 0;
+    }
+  }
+  
+  
+  /* Active button state 
+  .bg-blue-500 {
+    background-color: var(--accent-blue) !important;
+  }*/
+  
+  /* Inactive button state */
+  .bg-gray-200 {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary) !important;
+  }
+  
+  /* Chart customization */
+  .recharts-cartesian-grid-horizontal line,
+  .recharts-cartesian-grid-vertical line {
+    stroke: var(--grid-color) !important;
+  }
+  
+  .recharts-text {
+    fill: var(--text-secondary) !important;
+  }
+  
+  .recharts-legend-item-text {
+    color: var(--text-secondary) !important;
+  }
+  
+  /* Tooltip customization */
+  .recharts-tooltip-wrapper {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+  }
+  
+  .recharts-default-tooltip {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+  }
+  
+  /* Shadow effects */
+  .shadow-lg {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Responsive padding */
+  .p-6 {
+    padding: 1.5rem !important;
+  }
+  
+  /* Chart colors */
+  .recharts-bar-rectangle path {
+    fill: var(--accent-blue) !important;
+  }
+  
+  .recharts-line-curve {
+    stroke: var(--accent-green) !important;
+  }
+  
+  /* Scatter plot dots */
+  .recharts-scatter-symbol {
+    fill: var(--accent-blue) !important;
+    opacity: 0.6;
+  }
+}
+
+/*Tablet css styles below*/
+@media screen and (min-width: 601px) and (max-width: 1500px) {
+  :root {
+    --background: #333333;
+    --card-bg: #2d2d2d;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --accent-blue: #82ca9d;
+    --accent-green: #82ca9d;
+    --border-color: #333333;
+    --grid-color: #605c5c;
+  }
+  
+  
+  body {
+    background-color: var(--background);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styles */
+  .min-h-screen {
+    background-color: var(--background) !important;
+  }
+  
+  
+  /* Card styles */
+  .bg-white {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+  }
+
+  /* Position Property Price Prediction in the center */
+   .text-xl{
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  /* Typography */
+  h1, h2 {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px;
+    letter-spacing: -0.025em;
+  }
+  
+  /* Button styles */
+  
+  .px-4 {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 12px 24px;
+    font-family: Arial, sans-serif;
+    margin: 0.5em 15px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #383a41, #383a41);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .px-4:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Ripple effect */
+  
+  @keyframes ripple {
+    to {
+      transform: translate(-50%, -50%) scale(3.5);
+      opacity: 0;
+    }
+  }
+  
+  
+  /* Active button state 
+  .bg-blue-500 {
+    background-color: var(--accent-blue) !important;
+  }*/
+  
+  /* Inactive button state */
+  .bg-gray-200 {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary) !important;
+  }
+  
+  /* Chart customization */
+  .recharts-cartesian-grid-horizontal line,
+  .recharts-cartesian-grid-vertical line {
+    stroke: var(--grid-color) !important;
+  }
+  
+  .recharts-text {
+    fill: var(--text-secondary) !important;
+  }
+  
+  .recharts-legend-item-text {
+    color: var(--text-secondary) !important;
+  }
+  
+  /* Tooltip customization */
+  .recharts-tooltip-wrapper {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+  }
+  
+  .recharts-default-tooltip {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+  }
+  
+  /* Shadow effects */
+  .shadow-lg {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Responsive padding */
+  .p-6 {
+    padding: 1.5rem !important;
+  }
+  
+  /* Chart colors */
+  .recharts-bar-rectangle path {
+    fill: var(--accent-blue) !important;
+  }
+  
+  .recharts-line-curve {
+    stroke: var(--accent-green) !important;
+  }
+  
+  /* Scatter plot dots */
+  .recharts-scatter-symbol {
+    fill: var(--accent-blue) !important;
+    opacity: 0.6;
+  }
+}
+
+/*Mobile css styles below*/
+@media screen and (max-width:  600px) {
+  :root {
+    --background: #333333;
+    --card-bg: #2d2d2d;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --accent-blue: #82ca9d;
+    --accent-green: #82ca9d;
+    --border-color: #333333;
+    --grid-color: #605c5c;
+  }
+  
+  body {
+    background-color: var(--background);
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Position Property Price Prediction in the center */
+  .text-xl{
+    text-align: center;
+  }
+  
+  /* Container styles */
+  .min-h-screen {
+    background-color: var(--background) !important;
+    min-height: -webkit-fill-available; /* Fix for iOS viewport height */
+  }
+  
+  /* Card styles */
+  .bg-white {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+    border-radius: 12px; /* Slightly reduced for mobile */
+    margin: 10px;
+  }
+  
+  /* Typography */
+  h1, h2 {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin: 8px;
+    padding: 8px;
+    letter-spacing: -0.025em;
+    font-size: 1.5rem; /* Adjusted for mobile */
+  }
+  
+  /* Button styles */
+  .px-4 {
+    font-weight: bold;
+    font-size: 16px; /* Increased for better touch targets */
+    padding: 12px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    margin: 0.5em 10px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #383a41, #383a41);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    min-height: 44px; /* iOS minimum touch target size */
+    touch-action: manipulation; /* Optimize touch behavior */
+  }
+  
+  .px-4:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Remove hover effects for touch devices */
+  @media (hover: none) {
+    .px-4:hover {
+      transform: none;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  /* Chart customization */
+  .recharts-cartesian-grid-horizontal line,
+  .recharts-cartesian-grid-vertical line {
+    stroke: var(--grid-color) !important;
+    stroke-width: 0.5px; /* Thinner lines for mobile */
+  }
+  
+  .recharts-text {
+    fill: var(--text-secondary) !important;
+    font-size: 12px; /* Smaller text for mobile */
+  }
+  
+  /* Tooltip customization */
+  .recharts-tooltip-wrapper {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 8px;
+    max-width: 80vw; /* Prevent tooltips from overflowing */
+  }
+  
+  /* Responsive padding */
+  .p-6 {
+    padding: 1rem !important; /* Reduced padding for mobile */
+  }
+  
+  /* Improved touch targets for interactive elements */
+  .recharts-scatter-symbol {
+    fill: var(--accent-blue) !important;
+    opacity: 0.6;
+    border-radius: 6; /* Larger radius for better touch targets */
+  }
+  
+  /* Fix for iOS momentum scrolling */
+  .overflow-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Prevent text selection during touches */
+  * {
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
+  
+  /* Enable text selection in specific elements */
+  input, textarea {
+    user-select: text;
+  }
+
+}

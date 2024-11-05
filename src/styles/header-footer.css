@@ -1,0 +1,106 @@
+/* Header Styles */
+.header {
+    background-color: var(--card-bg);
+    padding: 16px 24px; /* Added horizontal padding */
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 50px;
+}
+
+.header-content {
+    max-width: 1400px; /* Increased max-width */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px; /* Added consistent padding */
+    width: 100%; /* Ensure full width within max-width */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    padding-top: 10px;
+}
+
+.logo .icon {     
+    color: var(--accent-blue);   
+}  
+
+/*Footer Styles*/  
+.footer {     
+    background-color: var(--card-bg);    
+    padding: 32px 16px;     
+    border-top: 1px solid var(--border-color);     
+    margin-top: auto;   
+}            
+
+.footer-section {     
+    color: var(--text-secondary);     
+    font-size: 14px;     
+    color: #ffffff;   
+}  
+
+.footer-section h4 {     
+    color: #82ca9d;     
+    font-size: 18px;     
+    margin-bottom: 16px;     
+    font-weight: 600; 
+}  
+
+.footer-section p {     
+    color: #a0a0a0;     
+    font-size: 14px;     
+    line-height: 1.5; 
+}  
+
+.footer-section ul {     
+    list-style: none;     
+    padding: 0; 
+}  
+
+.footer-section ul li {     
+    color: #a0a0a0;     
+    font-size: 14px;     
+    margin-bottom: 8px; 
+}  
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .header-content {
+        padding: 0 16px;
+    }
+
+    .logo{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1500px) {
+    .header-content {
+        padding: 0 24px;
+    }
+}
+
+/* For desktop */
+@media (min-width: 1280px) {
+    .header {
+        padding: 16px 0;
+    }
+
+    .header-content {
+        padding: 0 48px; /* Increased padding for larger screens */
+    }
+
+    /* Remove the negative margin */
+    .logo {
+        margin-left: 0;
+    }
+}

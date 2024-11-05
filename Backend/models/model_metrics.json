@@ -1,0 +1,1 @@
+{"r2_score": 0.7117390821882803, "features_used": ["Rooms", "Distance", "Bedroom2", "Bathroom", "Car", "Postcode", "Lattitude", "Longtitude"], "training_samples": 19070, "test_samples": 8174}

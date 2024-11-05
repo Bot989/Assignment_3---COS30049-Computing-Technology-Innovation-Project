@@ -1,0 +1,237 @@
+/* RandomForestPrediction.css */
+
+/* Main container */
+.prediction-container {
+  width: 90%;
+  min-height: 100vh;
+  background-color: #2d2d2d;
+  margin: 0 auto;
+}
+
+/* Title section styling */
+.prediction-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Main title text */
+.prediction-title {
+  font-size: 30px; 
+  font-weight: bold;
+  color: #ffffff;  /* Changed to white */
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Subtitle text below main title */
+.prediction-subtitle {
+  color: #ffffff;
+  max-width: 576px; 
+  margin: 0 auto;
+  font-size: 14px; 
+  line-height: 1.5;
+}
+
+/* White box containing the form */
+.prediction-form-container {
+  max-width: 1152px;
+  margin: 0 auto;
+  background-color: #333333;
+  border-radius: 8px; 
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+/* Individual form sections */
+.form-section {
+  padding: 24px; 
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.form-section:last-child {
+  border-bottom: none;
+}
+
+/* Headings for each form section */
+.section-heading {
+  font-size: 20px; 
+  font-weight: 600;
+  color: #ffffff;  /* Changed to white */
+  margin-bottom: 24px;
+}
+
+/* Layout for form fields */
+.form-grid {
+  display: grid;
+  gap: 24px; 
+  grid-template-columns: 1fr;
+}
+
+/* Individual input field containers */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+}
+
+/* Input field labels */
+.form-label {
+  font-size: 14px; 
+  font-weight: 500;
+  color: #ffffff;  /* Changed to white */
+}
+
+/* Input fields styling */
+.form-input {
+  width: 100%;
+  padding: 10px; 
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px; 
+  color: #ffffff;  /* Changed to white */
+  background-color: #444444;  /* Added darker background for input */
+  transition: border-color 0.15s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.form-input::placeholder {
+  color: #aaaaaa;  /* Made placeholder lighter */
+}
+
+/* Small text showing valid number ranges */
+.input-range {
+  font-size: 12px; 
+  color: #cccccc;  /* Made lighter */
+}
+
+/* Container for the buttons */
+.button-container {
+  padding: 24px; 
+  display: flex;
+  gap: 16px; 
+  flex-direction: column;
+}
+
+/* Buttons */
+.button {
+  padding: 10px 20px; 
+  border-radius: 6px; 
+  font-weight: 500;
+  font-size: 14px; 
+  transition: all 0.15s ease;
+  flex: 1;
+}
+
+/* Style for the Predict button */
+.predict-button {
+  background-color: #383a41;
+  color: white;
+  border: 2px solid #383a41;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.predict-button:hover {
+  background-color: #4a4c54;  /* Changed hover to lighter shade */
+  color: white;  /* Kept text white on hover */
+}
+
+/* Style for the Clear button */
+.clear-button {
+  background-color: #383a41;
+  color: white;
+  border: 2px solid #383a41;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.clear-button:hover {
+  background-color: #4a4c54;  /* Changed hover to lighter shade */
+  color: white;  /* Kept text white on hover */
+}
+
+.loading-spinner {
+  animation: spin 1s linear infinite;
+  margin-right: 8px; 
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Alerts */
+.alert {
+  margin: 24px; 
+  padding: 16px; 
+  border-radius: 6px; 
+  display: flex;
+  align-items: flex-start;
+  gap: 12px; 
+}
+
+.error-alert {
+  background-color: #442222;  /* Darker red background */
+  border: 1px solid #662222;
+  color: #ffaaaa;  /* Lighter red text */
+}
+
+/* Green box showing the prediction result */
+.prediction-result {
+  margin: 24px; 
+  padding: 20px; 
+  background-color: #224422;  /* Darker green background */
+  border: 1px solid #226622;
+  border-radius: 6px; 
+  text-align: center;
+}
+
+.prediction-result h4 {
+  color: #ffffff;
+  font-size: 16px; 
+  font-weight: 600;
+  margin-bottom: 8px; 
+}
+
+.prediction-amount {
+  color: #ffffff;
+  font-size: 32px; 
+  font-weight: 700;
+}
+
+.helper-text {
+  font-size: 12px; 
+  color: #cccccc;  /* Made lighter */
+  margin-top: 4px; 
+}
+
+/* Media queries remain the same... */
+@media (min-width: 640px) {
+  .prediction-container {
+      padding: 24px; 
+  }
+  
+  .button-container {
+      flex-direction: row;
+  }
+  
+  .form-section,
+  .button-container,
+  .alert,
+  .prediction-result {
+      padding: 32px; 
+  }
+}
+
+/* Rest of your media queries remain unchanged... */
